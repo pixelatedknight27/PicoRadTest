@@ -9,8 +9,6 @@
 
 int main() {
 
-    int x = 0;
-
     for(int i = 0x20004000; i < 0x20040000; i++){
         uint8_t volatile * const p_reg = (uint8_t *) (i);
         *p_reg = 0x55;
